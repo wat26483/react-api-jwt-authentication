@@ -1,0 +1,67 @@
+.containersearch .pagesearch{
+    background-image: linear-gradient(to top, #176ae8, #008ff9, #00adf7, #00c6ea, #2adddc);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.pages{
+    background-image: linear-gradient(to top, #176ae8, #008ff9, #00adf7, #00c6ea, #2adddc);
+    height: 100vh;
+}
+
+.navuser {
+    flex-wrap: wrap;
+    display: flex;
+    width: inherit;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.navuser img{
+    border-radius: 50%;
+    
+}
+.allitem{
+    
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards{
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    width: 330px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.cards img{
+    
+    border-radius: 50%;
+}
+.cards h5,p{
+    padding-left: 15px;
+    width: 100px;
+    margin: 0;
+}
+
+@media only screen and (max-width:500px){
+    .navuser p{
+        display: none;
+    }
+}
+@media only screen and (max-width:330px){
+    .allitem{
+        margin-top: 50px;
+    }
+    .search button{
+        display: none;
+    }
+    .search{
+        margin-top: 20px;
+    }
+}

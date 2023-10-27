@@ -1,0 +1,200 @@
+.containerprod {
+    background-image: linear-gradient(to top, #176ae8, #008ff9, #00adf7, #00c6ea, #2adddc);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.containerprod .prod {
+    top: 0;
+    position: sticky;
+}
+
+.nav {
+    flex-wrap: wrap;
+    display: flex;
+    width: inherit;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerprod h1 {
+    text-align: center;
+}
+
+.button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 10px;
+}
+
+.button-81:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.cardprod {
+    border-radius: 25px;
+    flex-direction: column;
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cardprod:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.prod .item {
+    width: 100vw;
+    height: 100vh;
+}
+
+.containercarditem {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+
+}
+
+.carditem {
+    padding: 20px;
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.carditem p{
+    padding: 0;
+    width: 100%;
+}
+.carditem h4 {
+    margin: 0;
+}
+
+.carditem h2 {
+    margin: 35px 0px;
+}
+
+.close {
+    cursor: pointer;
+    top: 20;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    overflow: hidden;
+}
+
+.containerimg {
+    overflow: hidden;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.containerimg img {
+    scroll-snap-align: start;
+}
+.containerimg img{
+    min-width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 10px;
+}
+.btn .prev{
+    position: absolute;
+    left: 0;
+    
+}
+
+.btn .next{
+    position: absolute;
+    right: 0;
+}
+
+.btn span svg {
+    font-size: 32px;
+}
+
+.btn span svg:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-height:900px) {
+    .containercarditem{
+        align-items: center;
+    }
+    .carditem{
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .containercarditem{
+        align-items: center;
+    }
+    .nav p {
+        display: none;
+    }
+    .carditem{
+        width: 380px;
+        height: 80%;
+    }
+}
+@media only screen and (max-width:430px) {
+
+    .carditem{
+        width: 280px;
+        height: 80%;
+    }
+    .carditem h2{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:330px) {
+    .carditem{
+        width: 180px;
+        height: 80%;
+    }
+    .nav div{
+        padding-top: 10px;
+    }
+}
